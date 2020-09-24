@@ -1,203 +1,198 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <main>
-      <header>
-        <nav>
-          <ul class="menu">
-            <li class="active">Accueil</li>
-            <li>Rechercher</li>
-            <li>A propos</li>
-          </ul>
-          <ul class="connexion">
-            <li>Se connecter</li>
-            <li>S'inscrire</li>
-          </ul>
-        </nav>
-        <div class="recherche">
-          <div class="logo">
-            <img src="assets/logo-actutu.png" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <nav>
+        <input type="checkbox" class="menu-checkbox" />
+        <label for="menu-checkbox" class="menu-toggle">≡ Menu</label>
+        <ul class="menu">
+          <li><a href="#" class="active">Accueil</a></li>
+          <li><a href="#"> Rechercher</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Se connecter</a></li>
+          <li><a href="#">S'inscrire</a></li>
+        </ul>
+      </nav>
+      <div class="recherche">
+        <div class="logo">
+          <img src="assets/logo-actutu.png" alt="" />
+        </div>
+        <div class="searchbar">
+          <input type="search" name="" id="" placeholder="Rechercher un livre" />
+          <button type="submit">Go</button>
+        </div>
+      </div>
+    </header>
+    <section class="livres">
+      <div class="recommandation">
+        <img src="assets/livre-orange.png" alt="recommandation" />
+        <h2 class="titre-categorie">Recommandation</h2>
+        <div class="vignettes">
+          <!-- <article class="vignette-item">
+            <img src="assets/ecmascript6.jpg" alt="" />
+            <span class="titre">Learning ECMAScript 6</span>
+            <span class="auteur">Narayan Prusty</span>
+            <span class="prix"> 27,42€</span>
+          </article>
+          <article class="vignette-item">
+            <img src="assets/learn-ecma.jpg" alt="" />
+            <span class="titre">Learn ECMAScript</span>
+            <span class="auteur">Narayan Prusty</span>
+            <span class="prix"> 18,99€</span>
+          </article>
+          <article class="vignette-item">
+            <img src="assets/ecma-cookbook.jpg" alt="" />
+            <span class="titre">ECMAScript Cookbook</span>
+            <span class="auteur">Ross Harrison</span>
+            <span class="prix"> 19,99€</span>
+          </article> -->
+        </div>
+      </div>
+      <div class="selection">
+        <img src="assets/livre-bleu.png" alt="recommandation" />
+        <h2 class="titre-categorie">
+          Les livres à moins de <span class="filtre">20€</span>
+        </h2>
+        <!-- <article class="article-allonge">
+          <div>
+            <img src="assets/ecmascript6.jpg" alt="" />
           </div>
-          <div class="searchbar">
-            <input
-              type="search"
-              name=""
-              id=""
-              placeholder="Rechercher un livre"
-            />
-            <button type="submit">Go</button>
+          <div class="info">
+            <span class="titre">Learning ECMAScript 6</span>
+            <span class="auteur">Narayan Prusty</span>
+            <p class="resume">
+              Learn all the new ES6 features and be amongst the most prominent
+              JavaScript developers who can write efficient JS programs as per
+              the latest standards! About This Book Learn a powerful approach
+              to writing object-oriented JavaScript code using ES6 Create and
+              use ES6 modules to learn to write smart, modularized JavaScript
+              code
+            </p>
           </div>
-        </div>
-      </header>
-      <section class="livres">
-        <div class="recommandation">
-          <img src="assets/livre-orange.png" alt="recommandation" />
-          <h2 class="titre-categorie">Recommandation</h2>
-          <div class="vignettes">
-            <article class="vignette-item">
-              <img src="assets/ecmascript6.jpg" alt="" />
-              <span class="titre">Learning ECMAScript 6</span>
-              <span class="auteur">Narayan Prusty</span>
-              <span class="prix"> 27,42€</span>
-            </article>
-            <article class="vignette-item">
-              <img src="assets/learn-ecma.jpg" alt="" />
-              <span class="titre">Learn ECMAScript</span>
-              <span class="auteur">Narayan Prusty</span>
-              <span class="prix"> 18,99€</span>
-            </article>
-            <article class="vignette-item">
-              <img src="assets/ecma-cookbook.jpg" alt="" />
-              <span class="titre">ECMAScript Cookbook</span>
-              <span class="auteur">Ross Harrison</span>
-              <span class="prix"> 19,99€</span>
-            </article>
+          <div>
+            <span class="prix"> 27,42€</span>
           </div>
-        </div>
-        <div class="selection">
-          <img src="assets/livre-bleu.png" alt="recommandation" />
-          <h2 class="titre-categorie">
-            Les livres à moins de <span class="filtre">20€</span>
-          </h2>
-          <article class="article-allonge">
-            <div>
-              <img src="assets/ecmascript6.jpg" alt="" />
-            </div>
-            <div class="info">
-              <span class="titre">Learning ECMAScript 6</span>
-              <span class="auteur">Narayan Prusty</span>
-              <p class="resume">
-                Learn all the new ES6 features and be amongst the most prominent
-                JavaScript developers who can write efficient JS programs as per
-                the latest standards! About This Book Learn a powerful approach
-                to writing object-oriented JavaScript code using ES6 Create and
-                use ES6 modules to learn to write smart, modularized JavaScript
-                code
-              </p>
-            </div>
-            <div>
-              <span class="prix"> 27,42€</span>
-            </div>
-          </article>
-          <article class="article-allonge">
-            <div>
-              <img src="assets/ecmascript6.jpg" alt="" />
-            </div>
-            <div class="info">
-              <span class="titre">Learning ECMAScript 6</span>
-              <span class="auteur">Narayan Prusty</span>
-              <p class="resume">
-                Learn all the new ES6 features and be amongst the most prominent
-                JavaScript developers who can write efficient JS programs as per
-                the latest standards! About This Book Learn a powerful approach
-                to writing object-oriented JavaScript code using ES6 Create and
-                use ES6 modules to learn to write smart, modularized JavaScript
-                code
-              </p>
-            </div>
-            <div>
-              <span class="prix"> 27,42€</span>
-            </div>
-          </article>
-          <article class="article-allonge">
-            <div>
-              <img src="assets/ecmascript6.jpg" alt="" />
-            </div>
-            <div class="info">
-              <span class="titre">Learning ECMAScript 6</span>
-              <span class="auteur">Narayan Prusty</span>
-              <p class="resume">
-                Learn all the new ES6 features and be amongst the most prominent
-                JavaScript developers who can write efficient JS programs as per
-                the latest standards! About This Book Learn a powerful approach
-                to writing object-oriented JavaScript code using ES6 Create and
-                use ES6 modules to learn to write smart, modularized JavaScript
-                code
-              </p>
-            </div>
-            <div>
-              <span class="prix"> 27,42€</span>
-            </div>
-          </article>
-          <article class="article-allonge">
-            <div>
-              <img src="assets/ecmascript6.jpg" alt="" />
-            </div>
-            <div class="info">
-              <span class="titre">Learning ECMAScript 6</span>
-              <span class="auteur">Narayan Prusty</span>
-              <p class="resume">
-                Learn all the new ES6 features and be amongst the most prominent
-                JavaScript developers who can write efficient JS programs as per
-                the latest standards! About This Book Learn a powerful approach
-                to writing object-oriented JavaScript code using ES6 Create and
-                use ES6 modules to learn to write smart, modularized JavaScript
-                code
-              </p>
-            </div>
-            <div>
-              <span class="prix"> 27,42€</span>
-            </div>
-          </article>
-          <article class="article-allonge">
-            <div>
-              <img src="assets/ecmascript6.jpg" alt="" />
-            </div>
-            <div class="info">
-              <span class="titre">Learning ECMAScript 6</span>
-              <span class="auteur">Narayan Prusty</span>
-              <p class="resume">
-                Learn all the new ES6 features and be amongst the most prominent
-                JavaScript developers who can write efficient JS programs as per
-                the latest standards! About This Book Learn a powerful approach
-                to writing object-oriented JavaScript code using ES6 Create and
-                use ES6 modules to learn to write smart, modularized JavaScript
-                code
-              </p>
-            </div>
-            <div>
-              <span class="prix"> 27,42€</span>
-            </div>
-          </article>
-        </div>
-      </section>
-      <footer>
-        <img src="assets/footer-logo.png" alt="" />
-        <h2>Toutes les ressources du site</h2>
-        <div class="footer-menu">
-          <ul>
-            <li><a href="#">Page d'accueil</a></li>
-            <li><a href="#">Livres papier</a></li>
-            <li><a href="#">Ebooks/Epubs</a></li>
-            <li><a href="#">Livres audio</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">Policier</a></li>
-            <li><a href="#">Science Fiction</a></li>
-            <li><a href="#">Frisson</a></li>
-            <li><a href="#">Médiéval</a></li>
-            <li><a href="#">Toutes les catégories</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">Promotions</a></li>
-            <li><a href="#">Livres à paraitre</a></li>
-            <li><a href="#">Meilleures ventes</a></li>
-            <li><a href="#">Incontournables</a></li>
-            <li><a href="#">Tous les bons plans</a></li>
-          </ul>
-        </div>
-      </footer>
-    </main>
-  </body>
+        </article>
+        <article class="article-allonge">
+          <div>
+            <img src="assets/ecmascript6.jpg" alt="" />
+          </div>
+          <div class="info">
+            <span class="titre">Learning ECMAScript 6</span>
+            <span class="auteur">Narayan Prusty</span>
+            <p class="resume">
+              Learn all the new ES6 features and be amongst the most prominent
+              JavaScript developers who can write efficient JS programs as per
+              the latest standards! About This Book Learn a powerful approach
+              to writing object-oriented JavaScript code using ES6 Create and
+              use ES6 modules to learn to write smart, modularized JavaScript
+              code
+            </p>
+          </div>
+          <div>
+            <span class="prix"> 27,42€</span>
+          </div>
+        </article>
+        <article class="article-allonge">
+          <div>
+            <img src="assets/ecmascript6.jpg" alt="" />
+          </div>
+          <div class="info">
+            <span class="titre">Learning ECMAScript 6</span>
+            <span class="auteur">Narayan Prusty</span>
+            <p class="resume">
+              Learn all the new ES6 features and be amongst the most prominent
+              JavaScript developers who can write efficient JS programs as per
+              the latest standards! About This Book Learn a powerful approach
+              to writing object-oriented JavaScript code using ES6 Create and
+              use ES6 modules to learn to write smart, modularized JavaScript
+              code
+            </p>
+          </div>
+          <div>
+            <span class="prix"> 27,42€</span>
+          </div>
+        </article>
+        <article class="article-allonge">
+          <div>
+            <img src="assets/ecmascript6.jpg" alt="" />
+          </div>
+          <div class="info">
+            <span class="titre">Learning ECMAScript 6</span>
+            <span class="auteur">Narayan Prusty</span>
+            <p class="resume">
+              Learn all the new ES6 features and be amongst the most prominent
+              JavaScript developers who can write efficient JS programs as per
+              the latest standards! About This Book Learn a powerful approach
+              to writing object-oriented JavaScript code using ES6 Create and
+              use ES6 modules to learn to write smart, modularized JavaScript
+              code
+            </p>
+          </div>
+          <div>
+            <span class="prix"> 27,42€</span>
+          </div>
+        </article>
+        <article class="article-allonge">
+          <div>
+            <img src="assets/ecmascript6.jpg" alt="" />
+          </div>
+          <div class="info">
+            <span class="titre">Learning ECMAScript 6</span>
+            <span class="auteur">Narayan Prusty</span>
+            <p class="resume">
+              Learn all the new ES6 features and be amongst the most prominent
+              JavaScript developers who can write efficient JS programs as per
+              the latest standards! About This Book Learn a powerful approach
+              to writing object-oriented JavaScript code using ES6 Create and
+              use ES6 modules to learn to write smart, modularized JavaScript
+              code
+            </p>
+          </div>
+          <div>
+            <span class="prix"> 27,42€</span>
+          </div>
+        </article> -->
+      </div>
+    </section>
+    <footer>
+      <img src="assets/footer-logo.png" alt="" />
+      <h2>Toutes les ressources du site</h2>
+      <div class="footer-menu">
+        <ul>
+          <li><a href="#">Page d'accueil</a></li>
+          <li><a href="#">Livres papier</a></li>
+          <li><a href="#">Ebooks/Epubs</a></li>
+          <li><a href="#">Livres audio</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Policier</a></li>
+          <li><a href="#">Science Fiction</a></li>
+          <li><a href="#">Frisson</a></li>
+          <li><a href="#">Médiéval</a></li>
+          <li><a href="#">Toutes les catégories</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Promotions</a></li>
+          <li><a href="#">Livres à paraitre</a></li>
+          <li><a href="#">Meilleures ventes</a></li>
+          <li><a href="#">Incontournables</a></li>
+          <li><a href="#">Tous les bons plans</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>
