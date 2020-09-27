@@ -12,8 +12,6 @@ body {
     height: 100vh;
 
 
-
-
 }
 
 main {
@@ -29,6 +27,14 @@ main {
 
 header {
     margin-bottom: 200px;
+}
+
+.logoMenuImg {
+    width: 30px;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 13px;
 }
 
 .logo img {
@@ -246,28 +252,37 @@ footer h2 {
     font-weight: bold;
 }
 
-/*-----------------Menu responsive---------------*/
-@media screen and (max-width: 800px) {
-    .menu {
-        display: none;
-    }
 
-    .menu-checkbox:checked~.menu {
+@media screen and (max-width: 800px) {
+
+    /*-----------------Menu responsive---------------*/
+    nav {
         display: block;
     }
 
-    .menu-checkbox {
-        opacity: 0;
+    .logoMenuImg {
+        display: block;
+    }
+
+    .menu-item {
+        background: #f5f5f5;
+        margin-right: 0;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        border-top: 1px solid black;
 
     }
 
-    .menu-checkbox:focus+.menu-toggle {
-        outline: #00A1A1 auto 5px;
+    /* Classe à toggle */
+    .responsive {
+        display: block;
+        margin-top: 50px;
     }
 
-    .menu-toggle {
-        padding: .5em 1em;
-    }
 
     .footer-menu ul:nth-child(3) {
         display: none;
@@ -292,17 +307,5 @@ footer h2 {
 
     }
 
-    /* .searchbar {
-        justify-self: center;
-
-    } */
-
 
 }
-
-/* @media screen and (max-width: 800px) {
-
-    .menu-toggle,
-    .menu-checkbox {
-        display: none;
-    } */
